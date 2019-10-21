@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka_sever" />
+        <module name="eureka_sever_01" />
+        <module name="hello-consumer-cfg" />
+        <module name="hello-consumer-feigin" />
+        <module name="hello-consumer-feigin-hystrix" />
+        <module name="hello-consumer-hystrix" />
+        <module name="hello-consumer-ribbon" />
+        <module name="helloconsumer" />
+        <module name="helloservice" />
+        <module name="hystrix-dashboard" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

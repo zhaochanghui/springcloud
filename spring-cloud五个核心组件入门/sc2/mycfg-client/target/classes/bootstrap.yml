@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      profile: test
+      label: master
+      discovery:
+        enabled: true # 表示使用服务发现组件中的Config Server，而不自己指定Config Server的uri，默认false
+        service-id: mycfg-server # 指定Config Server在服务发现中的serviceId，默认是configserver
+      name: consumer   #对应配置文件的名称
+#      uri: http://localhost:5555
+#      profile: test   #对应配置文件的test.,dev,pro
+#      label: master #对应git的branch
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:123456@localhost:9001/eureka/

@@ -1,0 +1,21 @@
+server:
+  port: 9021
+
+spring:
+  application:
+    name: consumer
+
+#设置服务注册中心的url
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:123456@localhost:9001/eureka
+      #在eureka中显示ip
+  instance:
+    prefer-ip-address: true
+    instance-id:  ${spring.cloud.client.ipAddress}:${server.port}
+
+
+producer:  #producer生产者的负载均衡算法，这里设置为随机
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

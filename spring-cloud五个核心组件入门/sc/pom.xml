@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.zch</groupId>
+    <artifactId>sc</artifactId>
+    <packaging>pom</packaging>
+    <version>0.1.1</version>
+    <modules>
+        <module>eureka_sever</module>
+        <module>eureka_sever_01</module>
+        <module>hello-service</module>
+        <module>hello-consumer</module>
+        <module>hello-consumer-ribbon</module>
+        <module>hello-consumer-cfg</module>
+        <module>hello-consumer-feigin</module>
+        <module>hello-consumer-hystrix</module>
+        <module>hello-consumer-feigin-hystrix</module>
+        <module>hystrix-dashboard</module>
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.8.RELEASE</version>
+    </parent>
+
+    <properties>
+        <javaVersion>1.8</javaVersion>
+    </properties>
+
+</project>

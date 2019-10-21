@@ -1,0 +1,17 @@
+server:
+  port: 9013
+
+spring:
+  application:
+    name: producer
+
+#设置服务注册中心的url
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:123456@localhost:9001/eureka
+      #在eureka中显示ip
+  instance:
+    prefer-ip-address: true
+    instance-id:  ${spring.cloud.client.ipAddress}:${server.port}
+

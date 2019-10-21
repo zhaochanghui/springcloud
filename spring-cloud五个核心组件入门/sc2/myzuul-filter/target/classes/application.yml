@@ -1,0 +1,31 @@
+server:
+  port: 9098
+
+spring:
+  application:
+    name: myzuul-filter
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://root:123456@localhost:9001/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id:  ${spring.cloud.client.ipAddress}:${server.port}
+
+#配置 zuul 用户名密码
+security:
+  basic:
+    enabled: true
+  user:
+    name: root
+    password: 123456
+
+
+zuul:
+  routes:
+    #ignored-services:  microservicecloud-dept  服务名: 映射名
+    producer: /p/**
+
+    #此处添加ignored-services的意义是忽略通过服务名可以访问微服务(添加完成之后不能通过服务名访问微服务)
+#  ignored-services: consumer
