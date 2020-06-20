@@ -1,2 +1,2 @@
-db: mysql
+db: mysql,pgsql
 dbport: 12345456
