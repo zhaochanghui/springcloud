@@ -1,2 +1,2 @@
-db: mysql5.7.24,pgsql777
+db: mysql5.7.24,db2
 dbport: 12345456
