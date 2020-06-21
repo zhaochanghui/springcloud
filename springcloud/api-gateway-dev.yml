@@ -1,4 +1,4 @@
-zuul.routes.micro-web.path:/web/**
-zuul.routes.micro-web.serviceId:micro-web
+zuul.routes.micro-web.path=/web/**
+zuul.routes.micro-web.serviceId=micro-web
 
 
